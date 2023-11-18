@@ -1,0 +1,13 @@
+{
+  "tabWidth": 4,
+  "printWidth": 120,
+  "overrides": [
+    {
+      "files": [".prettierrc", "*.json", "*.yaml", "*.yml"],
+      "options": {
+        "tabWidth": 2,
+        "bracketSpacing": false
+      }
+    }
+  ]
+}

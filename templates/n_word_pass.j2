@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+      * {
+        margin: 0;
+        padding: 0;
+
+        font-family: roboto;
+      }
+
+      body {
+        color: white;
+
+        display: inline-block;
+      }
+
+      #main {
+        display: flex;
+
+        flex-direction: column;
+
+        background: rgb(0,140,255);
+        background: linear-gradient(135deg, rgba(0,140,255,1) 0%, rgba(237,0,255,1) 80%);
+      }
+
+      #pass {
+        display: flex;
+      }
+
+      #text-div {
+        display: flex;
+        flex-direction: column;
+
+        margin: 25px 25px 0 25px;
+      }
+
+      #header {
+        font-size: 35px;
+
+        margin-bottom: 10px;
+
+        align-self: center;
+      }
+
+      p {
+        font-size: 22px;
+
+        margin-bottom: 10px;
+      }
+
+      #subtext {
+        font-size: 16px;
+
+        margin: 10px 0 10px 0;
+
+        align-self: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div id="pass">
+        <img src="{{ avatar_url }}" width=256 height=256 />
+
+        <div id="text-div">
+          <h1 id="header">N-Word Pass</h1>
+          <p>Issued by: {{ issuer }}</p>
+          <p>Issued for: {{ issuee }}</p>
+          <p>Expires: Never</p>
+        </div>
+      </div>
+      <p id="subtext">This pass allows the recipient to say the n-word as they please.</p>
+</div>
+  </body>
+</html>

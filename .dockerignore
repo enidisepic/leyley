@@ -1,0 +1,13 @@
+.git
+.github
+cdk
+__pycache__
+temp
+.DS_Store
+.dockerignore
+.gitignore
+.python-version
+LICENSE
+README.md
+poetry.lock
+pyproject.toml
