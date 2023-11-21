@@ -4,6 +4,7 @@ import os
 from events import Events
 from image_commands import ImageCommands
 from leyley import Leyley
+from user import UserCommands
 
 
 async def main() -> None:
@@ -14,6 +15,7 @@ async def main() -> None:
     bot = Leyley()
     await bot.add_cog(Events(bot))
     await bot.add_cog(ImageCommands())
+    await bot.add_cog(UserCommands(bot))
 
     await bot.start(os.getenv("LEYLEY_DISCORD_TOKEN") or "")
 

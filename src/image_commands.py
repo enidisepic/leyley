@@ -9,7 +9,6 @@ from discord import app_commands
 from discord.ext import commands
 from discord.interactions import Interaction
 from html2image import Html2Image
-from loguru import logger
 from PIL import Image, ImageOps
 
 

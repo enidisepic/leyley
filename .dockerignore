@@ -11,3 +11,5 @@ LICENSE
 README.md
 poetry.lock
 pyproject.toml
+.prettierrc
+.mega-linter.yml
