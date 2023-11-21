@@ -24,7 +24,7 @@ jobs:
       packages: write
 
     steps:
-      - name: Fail if trying to run on main branch
+      - name: Fail if trying to manually run on main branch
         if: github.event_name == 'workflow_dispatch' && github.ref == 'main'
         run: |
           echo 'This workflow can not be manually run from the main brainch'
